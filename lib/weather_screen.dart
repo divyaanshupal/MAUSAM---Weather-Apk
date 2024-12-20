@@ -25,10 +25,57 @@ class WeatherScreen extends StatelessWidget {
       //here search section will come to search a city 
 
       //main card
-      body: Column(
-        children: [
-          //main card 
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            //main card 
+            SizedBox(
+              width: double.infinity,
+              child: Card(
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: [
+                      Text("300 F",
+                      style: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold
+                      ),
+                      ),
+                      SizedBox(height: 10,),
+                      Icon(Icons.cloud, size: 64,),
+                      SizedBox(height: 10,),
+                      Text("Rain",
+                      style: TextStyle(
+                        fontSize: 20,
+                  
+                      ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ),
+         
+             const SizedBox(height: 20,),
+            //weather forcast cards
+            const Placeholder(
+              fallbackHeight: 150,
+            ),
+        
+            const SizedBox(height: 20,),
+        
+            const Placeholder(
+              fallbackHeight: 150,
+            ),
+        
+          ],
+        ),
       ),
 
     );
