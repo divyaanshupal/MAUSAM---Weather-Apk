@@ -5,6 +5,32 @@ class WeatherScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Mausam - The Weather App", style: TextStyle(
+          fontWeight: FontWeight.bold,
+           ),
+  
+          ),
+          centerTitle: true,
+          actions:  [
+            
+            IconButton(onPressed: (){
+
+            }, 
+            icon: const Icon(Icons.refresh))
+          ],
+      ),
+
+      //here search section will come to search a city 
+
+      //main card
+      body: Column(
+        children: [
+          //main card 
+        ],
+      ),
+
+    );
   }
 }
